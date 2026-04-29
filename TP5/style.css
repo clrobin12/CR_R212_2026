@@ -1,0 +1,95 @@
+:root {
+  --primary: #2563eb;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --spacing: 1.5rem;
+  --radius: 12px;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing);
+  margin-top: 2rem;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+
+button:focus, a:focus {
+  outline: 3px solid orange;
+  outline-offset: 3px;
+}
+
+.btn-filter {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-filter.active {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-detail {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: var(--dark);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-detail:hover {
+  background-color: var(--primary);
+}

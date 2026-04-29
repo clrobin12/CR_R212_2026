@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio MMI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Clara — Portfolio</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#projets">Mes Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projets" class="container">
+      <h2>Mes Travaux</h2>
+      
+      <div class="filters">
+        <button class="btn-filter active" data-filter="all">Tous</button>
+        <button class="btn-filter" data-filter="web">Web</button>
+        <button class="btn-filter" data-filter="design">Design</button>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <article class="card" data-category="web">
+          <h3>Site Vitrine</h3>
+          <p>Projet réalisé en Intégration R1.01.</p>
+          <button class="btn-detail">Voir plus</button>
+        </article>
+        
+        <article class="card" data-category="design">
+          <h3>Logo Boulangerie</h3>
+          <p>Création graphique sous Illustrator.</p>
+          <button class="btn-detail">Voir plus</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 — Étudiante MMI Vichy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
